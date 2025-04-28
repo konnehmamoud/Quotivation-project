@@ -36,7 +36,7 @@ function App() {
 
   useEffect(() => {
     fetchQuotes();
-  }, []);
+  }, [fetchQuotes]);
 
   useEffect(()=>{
 window.localStorage.setItem("favoriteQuotes", JSON.stringify(favoriteQuotes))
